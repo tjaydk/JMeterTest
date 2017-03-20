@@ -1,0 +1,8 @@
+true,true,true,400,Invalid input
+true,true,false,400,Invalid input
+true,false,true,200,20
+true,false,false,200,15
+false,true,true,200,30
+false,true,false,200,10
+false,false,true,200,20
+false,false,false,200,0
