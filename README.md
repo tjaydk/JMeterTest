@@ -32,9 +32,23 @@ Exploratory testing is a way to test the application by exploring it to find wha
 Exploratory testing requires rapid feedback on the issues faced and for any anomalies encountered. The purpose is it will give you an insight of the application and secondly, it may render some good defects.
 
 #### Thoughts about the JMeter test results
+##### Discount Test
+|  | Error Percentage | Min time in ms | Average Time in MS |Max in ms |
+|---|---|---|---|---|
+| 10 tests | 0% | 230 | 263 | 326 |
+| 100 tests | 0% | 222 | 255 | 426 |
+| 1000 tests | 0% | 224 | 251 | 678 |
+
+##### Interest Test
+|  | Error Percentage | Min time in ms | Average Time in MS |Max in ms |
+|---|---|---|---|---|
+| 10 tests | 0% | 469 | 575 | 713 |
+| 100 tests | 0% | 475 | 720 | 1510 |
+| 1000 tests | 0% | 477 | 590 | 1191 |
+
 We used a free hosted PHP server from [Heroku](https://www.heroku.com/).
 
-As we can see from the results in the table, the difference between the min and max sample time is does have some jumps, but the average time is pretty close to the fastest time. This shows that there is a good stability on the server. 
+As we can see from the results in the table, the difference between the min and max sample time does have some jumps, but the average time is pretty close to the fastest time. This shows that there is a good stability on the server. 
 There are no errors or timeouts, so the non-functional requirement that one would expect of stability and speed are satisfied.
 The only problem with the JMeter test is that It relays on the amount of threads possible to run on the system, and therefore can’t imitate the situation of 1000 concurrent request to the server.
 
