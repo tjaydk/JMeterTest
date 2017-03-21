@@ -4,6 +4,8 @@
 
 #### The 4 system testing quadrants:
 
+ image: JMeterTest/4agileQuadrant.jpg 
+ 
 The testing quadrants contain both business (user) and technology (developer) facing, either manual or automation or a combination of both. It is worth noticing that in Q3 andQ4 you need have software/code to test.
 The four quadrants can be described as:
 
